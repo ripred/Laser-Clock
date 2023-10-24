@@ -149,7 +149,7 @@ void setup() {
     // 
     // Start the pulse detector interrupts
     // 
-    attachInterrupt(0, pulse, FALLING);
+    attachInterrupt(digitalPinToInterrupt(pulsePin), pulse, FALLING);
 
     MOTORON;
     delay(2000);
